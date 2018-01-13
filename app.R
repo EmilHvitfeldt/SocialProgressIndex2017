@@ -89,16 +89,18 @@ ui <- bootstrapPage(
                 href = "http://www.socialprogressindex.com/definitions/"),
               "."
               ),
+     helpText("All code can be found at my ",
+              a("github", 
+                href = "https://github.com/EmilHvitfeldt/SocialProgressIndex2017"),
+              "."
+     ),
 
      hr(),
      
      textOutput("selected_var")
    ),
    
-
-
    plotOutput("Plot")
-
 )
 
 # Define server logic required to draw a histogram
